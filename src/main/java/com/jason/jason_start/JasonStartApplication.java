@@ -4,6 +4,7 @@ import com.jason.jason_start.common.MyAspect;
 import com.jason.jason_start.config.AppConfig;
 import com.jason.jason_start.domain.User;
 import org.apache.catalina.core.ApplicationContext;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
@@ -13,9 +14,10 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 
 @SpringBootApplication
 @EnableCaching // 启动缓存
+@MapperScan("com.jason.jason_start.dao")
 public class JasonStartApplication {
 
-	@Bean(name = "myAspect")
+	//@Bean(name = "myAspect")
 	public MyAspect initMyAspect() {
 		return new MyAspect();
 	}

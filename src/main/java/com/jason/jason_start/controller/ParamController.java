@@ -30,14 +30,11 @@ public class ParamController extends BaseController {
     private ParamService paramService;
     @Autowired
     private User user;
-    @Autowired
-    private DsConfig dsConfig;
-
     //private final static Logger LOGGER = LoggerFactory.getLogger(ParamController.class);
     @ApiOperation(value = "hello")
     @GetMapping("/index")
     public Object index() {
-        return dsConfig.getDriverName();
+        return "index";
     }
 
     @GetMapping("/chart/data")

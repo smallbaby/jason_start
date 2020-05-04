@@ -8,9 +8,6 @@ import org.springframework.stereotype.Component;
  * @author: Jason
  * @date 2020/5/4
  */
-@Component
-@Data
-@ConfigurationProperties("database")
 public class DsConfig {
     private String driverName;
     private String url;
