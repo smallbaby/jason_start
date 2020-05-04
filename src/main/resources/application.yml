@@ -1,0 +1,13 @@
+server:
+  servlet:
+    context-path: /jason
+  port: 8087
+  tomcat:
+    uri-encoding: utf-8
+
+spring:
+  profiles:
+    active: test
+swagger:
+  is:
+    show: true
