@@ -31,7 +31,10 @@ Done
 16 Aspect
 80%
 17 db
+50%
 18 MyBatis
+50%
 19 redis
+20
 
 
