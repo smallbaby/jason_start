@@ -32,7 +32,7 @@ public class SwaggerConfig {
                 // 页面标题
                 .title("Jason Start's Swagger2 RESTFul API")
                 // 版本号
-                .contact(new Contact("zhangkai12913", "jason.com", "zhangkai12913@autohome.com.cn"))
+                .contact(new Contact("jason", "jason.com", "helleworld@123.com.cn"))
                 .version("1.0")
                 // 描述
                 .description("This is [Jason] API doc")
