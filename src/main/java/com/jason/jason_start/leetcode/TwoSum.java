@@ -1,6 +1,6 @@
 package com.jason.jason_start.leetcode;
 
-import io.swagger.models.auth.In;
+import com.jason.jason_start.common.CommonLog;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,7 +15,9 @@ import java.util.Map;
 public class TwoSum {
     public static void main(String[] args) {
         int[] nums = new int[]{2, 7, 11, 15};
+        CommonLog.info("helloWOorld");
         System.out.println(twoSum(nums, 9));
+        CommonLog.info(twoSum(nums, 9).toString());
     }
 
     private static int[] twoSum(int[] nums, int target) {
