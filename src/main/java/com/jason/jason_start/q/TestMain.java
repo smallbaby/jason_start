@@ -1,13 +1,17 @@
 package com.jason.jason_start.q;
 
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * Author: Jason
  * Date 2020/5/5
  */
 public class TestMain {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        BlockingQueue<String> x = new LinkedBlockingQueue<>();
+        x.offer(null);
+        //System.out.println(x.take());
     }
 }
 
